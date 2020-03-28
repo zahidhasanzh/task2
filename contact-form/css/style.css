@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+a:hover{
+	text-decoration:none;
+}
+button:focus{
+	outline:0;
+}
+a:focus,input:focus,textarea:focus,button:focus{
+	outline:0 solid;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0 0 15px;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.714;
+	font-size:14px;
+}
+.clear{
+	margin:0;
+	padding:0;
+}
+.section-padding{
+	padding:80px 0;
+}
+body,h2 {
+    font-weight: 300;
+}
+
+.section-titel {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+
+.contact-us-form {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+p.form-element {
+    position: relative;
+}
+
+p.form-element label {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+p.form-element input[type=text], p.form-element input[type=email], p.form-element textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: 100%;
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    transition:.2s;
+}
+
+input#firstname {}
+
+p.form-element textarea {
+    max-height: 150px;
+}
+.contact-us-form input[type=submit] {
+    background: #6D59B0;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5PX;
+    float: right;
+}
+
+p.small-text {
+    font-size: 14px;
+    margin: 0;
+    padding: 11px 0;
+}
+
+.contact-us-form input[type=text]:focus,.contact-us-form input[type=email]:focus,.contact-us-form textarea:focus {
+    background:#ddd;
+}
