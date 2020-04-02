@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+a:hover{
+	text-decoration:none;
+}
+button:focus{
+	outline:0;
+}
+a:focus,input:focus,textarea:focus,button:focus{
+	outline:0 solid;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0 0 15px;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #626262;
+	line-height: 1.714;
+	font-size:14px;
+}
+.clear{
+	margin:0;
+	padding:0;
+}
+.section-padding{
+	padding:150px 0;
+	background-size:cover;
+	background-position: center;
+	background-color: #ddd;
+}
+
+.section-bg{background-image: url(../img/bg.jpg);}
+
+.section-overlay {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.section-overlay:after {
+  position: ;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  z-index: -1;
+  opacity: .5;
+}
+.section-padding.section-bg.section-overlay {
+}
+.single-count-item {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 20px;
+}
+.single-count-item i.fa {
+  font-size: 50px;
+}
+.single-count-item h3 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 20px;
+}
