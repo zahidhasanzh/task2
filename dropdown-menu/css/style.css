@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+a:hover{
+	text-decoration:none;
+}
+button:focus{
+	outline:0;
+}
+a:focus,input:focus,textarea:focus,button:focus{
+	outline:0 solid;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0 0 15px;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #626262;
+	line-height: 1.714;
+	font-size:14px;
+}
+.clear{
+	margin:0;
+	padding:0;
+}
+.section-padding{
+	padding:80px 0;
+}
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+}
+
+.main-menu li {
+    display: inline-block;
+    position:relative;
+}
+
+.main-menu li a {
+    display: block;
+    padding: 15px;
+    color: #333;
+}
+.main-menu li ul {
+    position: absolute;
+    left: 0;
+    width: 250px;
+    background: #000000;
+    padding: 15px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    transform: scale(.5);
+}
+
+.main-menu li ul li {
+    display: block;
+}
+
+.main-menu li ul li a {}
+
+.main-menu li ul li a {
+    padding: 10px 15px;
+    color: #999;
+}
+
+.main-menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.main-menu li:hover > a {
+    color: #D94F53;
+}
+
+.main-menu li:hover li:hover > a {
+    background: #D94F53;
+    color: #fff;
+}
