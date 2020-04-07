@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+a:hover{
+	text-decoration:none;
+}
+button:focus{
+	outline:0;
+}
+a:focus,input:focus,textarea:focus,button:focus{
+	outline:0 solid;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0 0 15px;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #626262;
+	line-height: 1.714;
+	font-size:14px;
+}
+.clear{
+	margin:0;
+	padding:0;
+}
+.section-padding{
+	padding:80px 0;
+}
+.booking-area{
+	background-image:url(../img/bg.jpg);
+	background-size:cover;
+	background-position:center;
+}
+.booking-text {
+    text-align: center;
+    color: #fff;
+}
+.sep-top {
+    max-width: 400px;
+}
+.sep-bottom {
+    max-width: 250px;
+}
+.booking-text h2 {
+    font-size: 70px;
+    margin-top: 20px;
+}
+.booking-area {
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.booking-area:after,.booking-form-element:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    opacity: .5;
+}
+.booking-form {
+    margin-top: 50px;
+}
+.booking-form-element {
+    position: relative;
+    z-index: 1;
+    padding:20px;
+}
+.booking-form-element label {
+    display: block;
+    color: #fff;
+    opacity: .7;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 300;
+}
+.booking-form-element select {
+    color: #BD8304;
+    font-size: 25px;
+    font-weight: 700;
+}
+.booking-form-element select {
+    width: 100%;
+    background: none;
+    border: none;
+}
+.booking-form-element select:focus{
+	outline:none;
+}
+.booking-form-element input[type=submit] {
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    color: #fff;
+    opacity: .7;
+    padding: 23px 10px;
+    font-size: 14px;
+    font-weight:300;
+}
