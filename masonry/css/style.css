@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+a:hover{
+	text-decoration:none;
+}
+button:focus{
+	outline:0;
+}
+a:focus,input:focus,textarea:focus,button:focus{
+	outline:0 solid;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0 0 15px;
+}
+html,body{
+    height:100%;
+}
+body {
+    position:relative;
+	font-family: 'Roboto', sans-serif;
+	color: #626262;
+	line-height: 1.714;
+	font-size:14px;
+    
+}
+.clear{
+	margin:0;
+	padding:0;
+}
+.section-padding{
+	padding:80px 0;
+}
+.portfolio-bg-1{background-image: url(../img/project-bg-1.jpg);}
+.portfolio-bg-2{background-image: url(../img/project-bg-2.jpg);}
+.portfolio-bg-3{background-image: url(../img/project-bg-3.jpg);}
+.portfolio-bg-4{background-image: url(../img/project-bg-4.jpg);}
+
+
+
+.portfolio-list {
+    overflow: hidden;
+}
+
+.single-portfolio-item {
+    float: left;
+    width: 33.3333%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    position: relative;
+    z-index: 2;
+}
+
+.single-portfolio-item.large-bg {
+    height: 600px;
+}
+
+.portfolio-hover {
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    color: #fff;
+    padding: 20px;
+    font-size: 12px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.portfolio-hover h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.single-portfolio-item:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e8e8e8; 
+    background: -moz-linear-gradient(top,  #e8e8e8 0%, #000000 100%); 
+    background: -webkit-linear-gradient(top,  #e8e8e8 0%,#000000 100%); 
+    background: linear-gradient(to bottom,  #e8e8e8 0%,#000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#000000',GradientType=0 );
+    z-index: -1;
+    opacity: 0;
+    transition: .3s;
+}
+
+.single-portfolio-item:hover:after {
+    opacity: .7;
+}
+
+.single-portfolio-item:hover .portfolio-hover {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+
