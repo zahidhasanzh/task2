@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+a:hover{
+	text-decoration:none;
+}
+button:focus{
+	outline:0;
+}
+a:focus,input:focus,textarea:focus,button:focus{
+	outline:0 solid;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0 0 15px;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #626262;
+	line-height: 1.714;
+	font-size:14px;
+}
+.clear{
+	margin:0;
+	padding:0;
+}
+.section-padding{
+	padding:80px 0;
+}
+
+.section-bg{
+	background-image:url(../img/bg-1.png) no-repeat scroll right bottom;
+}
+
+.pricing-content li:before{
+	font-family: fontAwesome;
+	content: "\f046";
+}
+
+.section-titel {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-padding.section-bg {
+  background-color: #F7F7F7;
+}
+.section-titel h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.section-titel h2 span {
+  color: #2C4182;
+}
+.single-pricing-table {
+  background: #fff;
+  margin-top:80px;
+}
+
+.section-bg .col-md-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.col-md-4 {
+}
+.section-padding .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.pricing-titel {
+  background-color: #01BCD5;
+  position: relative;
+  color: #fff;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  padding-top: 90px;
+}
+.pricing-ticker {
+  background-color: #3A3D50;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding-top: 25px;
+  text-align: center;
+  top: -50px;
+  position: absolute;
+}
+.pricing-ticker span {
+  color: #1BA7B6;
+  font-size: 22px;
+  line-height: 0;
+}
+.pricing-titel h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 43px;
+}
+.color-2 .pricing-titel{
+	background-color:#02A4EF;
+}
+.color-3 .pricing-titel{
+	background-color:#2BB6F7;
+}
+
+.pricing-content ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.pricing-content li {
+	padding: 10px;
+	font-size: 15px;
+	padding-left: 25px;
+}
+.pricing-content li:nth-child(2n+2){
+	background-color: #F5F6F8;
+}
+.pricing-content li::before {
+	margin-right: 10px;
+}
+
+.boxed-btn {
+  border: 1px solid #78C2F4;
+  display: inline-block;
+  padding: 8px 15px;
+  color: #78C2F4;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.pricing-btn {
+  padding: 13px 25px;
+}
+
+.pricing-content, .pricing-btn {
+	border-left: 1px solid #ddd;
+}
+.col-md-4:nth-child(3), .pricing-content:nth-child(3).pricing-btn {
+	border-right: 1px solid #ddd;
+}
+.pricing-btn {
+	border-bottom: 1px solid #ddd;
+}
