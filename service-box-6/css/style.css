@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+a:hover{
+	text-decoration:none;
+}
+button:focus{
+	outline:0;
+}
+a:focus,input:focus,textarea:focus,button:focus{
+	outline:0 solid;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0 0 15px;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #626262;
+	line-height: 1.714;
+	font-size:14px;
+}
+.clear{
+	margin:0;
+	padding:0;
+}
+
+.service-box-hover{background-image: url(../img/bg-1.jpg);}
+.section-padding {
+    background-color: #EFEFEF;
+    margin:50px 0;
+}
+
+.service-icon {
+    font-size: 120px;
+    opacity: .1;
+    line-height: 120px;
+    margin-bottom: 40px;
+}
+
+.service-box-hover {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    z-index: 1;
+    transition:.3s;
+}
+
+.single-service-box {
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 60px 30px;
+}
+
+.single-service-box h2 {
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.single-service-box:hover .service-box-hover {
+    visibility: visible;
+    opacity: 1;
+    transform:scale(1.1);
+}
+.service-box-hover:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .8;
+    background: #b4ddb4;
+    background: -moz-linear-gradient(top,  #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+    background: -webkit-linear-gradient(top,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+    background: linear-gradient(to bottom,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 );
+
+}
+.service-box-inner{
+    position: relative;
+	z-index: 3;
+}
+.single-service-box:hover{
+	color:#fff;
+}
+.single-service-box:hover .service-icon{
+    opacity:1;
+}
