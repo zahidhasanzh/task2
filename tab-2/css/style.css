@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+a:hover{
+	text-decoration:none;
+}
+button:focus{
+	outline:0;
+}
+a:focus,input:focus,textarea:focus,button:focus{
+	outline:0 solid;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0 0 15px;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #626262;
+	line-height: 1.714;
+	font-size:16px;
+}
+.clear{
+	margin:0;
+	padding:0;
+}
+.bg-1{background-image: url(../img/bg-1.jpg);}
+.bg-2{background-image: url(../img/bg-2.jpg);}
+.bg-3{background-image: url(../img/bg-3.jpg);}
+.bg-4{background-image: url(../img/bg-4.jpg);}
+.section-padding{
+	padding:80px 0;
+}
+.feture-menu {
+    margin: 0 0 100px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.feture-menu li {
+    display: inline-block;
+}
+
+.feture-menu li a {
+	position:relative;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 30px;
+    border-bottom: 4px solid transparent;
+}
+.feture-menu li a.active{
+	border-color:#F2C400;
+}
+
+
+.single-feture-item {
+    position: relative;
+    height: 500px;
+    display: table;
+    width: 100%;
+}
+
+.feature-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 100%;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+}
+
+.feature-text {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 530px;
+}
+
+.feature-text h4 {
+    font-size: 30px;
+    opacity: .5;
+}
+
+.feature-text h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.boxed-btn {
+    display: inline-block;
+    background: #F2C400;
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-top: 15px;
+}
